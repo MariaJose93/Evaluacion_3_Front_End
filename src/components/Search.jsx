@@ -27,7 +27,6 @@ const Search = () => {
     } else {
         results = personajes.filter((personaje) =>
             personaje.name?.toLowerCase().includes(search.toLowerCase()) ||
-            personaje.age?.toString().toLowerCase().includes(search.toLowerCase()) ||
             personaje.gender?.toLowerCase().includes(search.toLowerCase()) ||
             personaje.race?.toLowerCase().includes(search.toLowerCase())
         );
