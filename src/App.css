@@ -160,7 +160,12 @@ h1 {
     gap: 45px;
   }
   body {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('https://wallpapers-clan.com/wp-content/uploads/2024/06/dragon-ball-shenron-majestic-dragon-desktop-wallpaper-preview.jpg');
     background-size: cover;
+
   }
   #root {
     max-width: 12801px;
@@ -175,4 +180,62 @@ h1 {
     max-width: 240px;
   }
   
+}
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Reduce a 3 columnas */
+    gap: 40px; /* Espaciado más pequeño */
+  }
+  body {
+    background-size: cover;
+  }
+  .card {
+    height: 300px; /* Reduce la altura de las imágenes */
+  }
+  h1 {
+    font-size: 2.5rem; /* Reduce el tamaño del encabezado */
+  }
+  button {
+    font-size: 1.2rem; /* Ajusta el tamaño de los botones */
+    padding: 12px 18px;
+  }
+  .form-control {
+    max-width: 350px; /* Ajusta el ancho del formulario */
+  }
+  #root {
+    max-width: 12801px;
+    margin: 0 auto;
+    overflow: hidden; 
+  }
+}
+
+/* Tabletas y dispositivos medianos */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: auto; /* Reduce a 2 columnas */
+    gap: 30px;
+  }
+  body {
+    background-size: cover;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  .card {
+    height: 250px; /* Ajusta la altura de las imágenes */
+  }
+  .form-control {
+    max-width: 300px;
+  }
+  .info p {
+    font-size: 1.4rem; /* Reduce el tamaño del texto */
+  }
+  button {
+    font-size: 1.1rem;
+  }
+  #root {
+    max-width: 12801px;
+    margin: 0 auto;
+    overflow: hidden; 
+  }
 }
